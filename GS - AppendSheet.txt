@@ -1,0 +1,19 @@
+function appendsheet() {
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//
+//       filename: GS - AppendSheet.txt
+//          coder: AdamRyan
+//        program: Google Sheets Scripting Tool
+//    description: This script appends the sheet with predefined data
+//      extention: GS
+//       licensce: OpenSource
+//        website: adamryan.info
+//
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+ 
+
+  var sheet = SpreadsheetApp.getActiveSheet();
+  sheet.appendRow(['Cotton Sweatshirt XL', 'css004']);
+}
+

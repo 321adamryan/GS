@@ -1,0 +1,20 @@
+function CopyPasteRange() {
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//
+//       filename: GS - CopyPasteRange.txt
+//          coder: AdamRyan
+//        program: Google Sheets Scripting Tool
+//    description: This script Copies the given range and pastes it in the given destination
+//      extention: GS
+//       licensce: OpenSource
+//        website: adamryan.info
+//
+// :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+ 
+var ss = SpreadsheetApp.getActiveSpreadsheet ();
+var source = ss.getRange ('Dashboard!A22:w24');
+source.copyTo (ss.getRange ('Database!A196'), {contentsOnly: true});
+
+} 
+
