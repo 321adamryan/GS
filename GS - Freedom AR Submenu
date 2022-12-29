@@ -1,0 +1,116 @@
+function onOpen() {
+  var menu = [{name: "Show All - STALLPayments", functionName: "showAll"}, {name: "Verify Payments - STAllPayments", functionName: "showPayments"},{name: "Verify Refunds - STAllPayments", functionName: "showRefunds"},{name: "Verify Deposits - STAllPayments", functionName: "showDeposits"},{name: "View Formulas - STAllPayments", functionName: "showFormula"}]
+  SpreadsheetApp.getActiveSpreadsheet().addMenu("*AR*", menu);
+}
+//Reveal All
+function showAll() {
+  var ss = SpreadsheetApp.getActive().getSheetByName("STAllPayments");
+  var sheet = ss.activate();
+  sheet.showColumns(1,30);   // Reveals 30 collumns starting with the first one
+}
+
+//Verify Payments
+function showPayments() {
+  var ss = SpreadsheetApp.getActive().getSheetByName("STAllPayments");
+  var sheet = ss.activate();
+sheet.hideColumns(1); // Hides Column A
+sheet.hideColumns(2); // Hides Column B
+sheet.hideColumns(4); // Hides Column D
+sheet.hideColumns(6); // Hides Column F
+sheet.hideColumns(8); // Hides Column H
+sheet.hideColumns(9); // Hides Column I
+sheet.hideColumns(10); // Hides Column J
+sheet.hideColumns(13); // Hides Column M
+sheet.hideColumns(16); // Hides Column P
+sheet.hideColumns(17); // Hides Column Q
+sheet.hideColumns(19); // Hides Column S
+sheet.hideColumns(20); // Hides Column T
+sheet.hideColumns(22); // Hides Column V
+sheet.hideColumns(23); // Hides Column W
+sheet.hideColumns(24); // Hides Column X
+sheet.hideColumns(26); // Hides Column Z
+sheet.hideColumns(30); // Hides Column AD
+}
+
+//Verify Refunds
+function showRefunds() {
+  var ss = SpreadsheetApp.getActive().getSheetByName("STAllPayments");
+  var sheet = ss.activate();
+sheet.hideColumns(1); // Hides Column A
+sheet.hideColumns(2); // Hides Column B
+sheet.hideColumns(3); // Hides Column C
+sheet.hideColumns(6); // Hides Column F
+sheet.hideColumns(7); // Hides Column G
+sheet.hideColumns(8); // Hides Column H
+sheet.hideColumns(9); // Hides Column I
+sheet.hideColumns(10); // Hides Column J
+sheet.hideColumns(13); // Hides Column M
+sheet.hideColumns(14); // Hides Column N
+sheet.hideColumns(18); // Hides Column R
+sheet.hideColumns(20); // Hides Column T
+sheet.hideColumns(21); // Hides Column U
+sheet.hideColumns(22); // Hides Column V
+sheet.hideColumns(23); // Hides Column W
+sheet.hideColumns(24); // Hides Column X
+sheet.hideColumns(25); // Hides Column Y
+sheet.hideColumns(26); // Hides Column Z
+sheet.hideColumns(27); // Hides Column AA
+sheet.hideColumns(29); // Hides Column AC
+sheet.hideColumns(30); // Hides Column AD
+}
+
+  //Verify Deposits
+function showDeposits() {
+  var ss = SpreadsheetApp.getActive().getSheetByName("STAllPayments");
+  var sheet = ss.activate();
+sheet.hideColumns(1); // Hides Column A
+sheet.hideColumns(2); // Hides Column B
+sheet.hideColumns(3); // Hides Column C
+sheet.hideColumns(4); // Hides Column D
+sheet.hideColumns(6); // Hides Column F
+sheet.hideColumns(7); // Hides Column G
+sheet.hideColumns(8); // Hides Column H
+sheet.hideColumns(9); // Hides Column I
+sheet.hideColumns(10); // Hides Column J
+sheet.hideColumns(16); // Hides Column P
+sheet.hideColumns(17); // Hides Column Q
+sheet.hideColumns(19); // Hides Column S
+sheet.hideColumns(20); // Hides Column T
+sheet.hideColumns(22); // Hides Column V
+sheet.hideColumns(23); // Hides Column W
+sheet.hideColumns(24); // Hides Column X
+sheet.hideColumns(25); // Hides Column Y
+sheet.hideColumns(26); // Hides Column Z
+sheet.hideColumns(28); // Hides Column AB
+sheet.hideColumns(29); // Hides Column AC
+sheet.hideColumns(30); // Hides Column AD
+}
+
+    //Verify Formulas
+function showFormula() {
+  var ss = SpreadsheetApp.getActive().getSheetByName("STAllPayments");
+  var sheet = ss.activate();
+sheet.hideColumns(2); // Hides Column B
+sheet.hideColumns(3); // Hides Column C
+sheet.hideColumns(4); // Hides Column D
+sheet.hideColumns(5); // Hides Column E
+sheet.hideColumns(6); // Hides Column F
+sheet.hideColumns(7); // Hides Column G
+sheet.hideColumns(8); // Hides Column H
+sheet.hideColumns(9); // Hides Column I
+sheet.hideColumns(10); // Hides Column J
+sheet.hideColumns(11); // Hides Column K
+sheet.hideColumns(12); // Hides Column L
+sheet.hideColumns(13); // Hides Column M
+sheet.hideColumns(14); // Hides Column N
+sheet.hideColumns(15); // Hides Column O
+sheet.hideColumns(16); // Hides Column P
+sheet.hideColumns(17); // Hides Column Q
+sheet.hideColumns(21); // Hides Column U
+sheet.hideColumns(22); // Hides Column V
+sheet.hideColumns(23); // Hides Column W
+sheet.hideColumns(27); // Hides Column AA
+sheet.hideColumns(28); // Hides Column AB
+sheet.hideColumns(29); // Hides Column AC
+sheet.hideColumns(30); // Hides Column AD
+}
